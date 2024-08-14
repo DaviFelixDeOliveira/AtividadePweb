@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Clientes</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+
+<body>
+        <div class="layout">
+
+              <form name="cadastro-cliente" method="post">
+
+                    <fieldset>
+                        <h3>Cadastrar de Clientes</h3>
+                    </fieldset>
+
+                    <fieldset class="tudo">    
+                        <label for="Codigo">Seu Código:</label>
+                        <input required class="Codigo" type="text" placeholder="Digite seu código" maxlength="50">
+                     
+                            <br><br>
+                         
+                        <label for="Nome">Nome:</label>
+                        <input required class="Nome" type="text" placeholder="Digite seu Nome">
+                    
+                            <br><br>
+
+                        <label for="Sobrenome">Sobrenome:</label>
+                        <input required class="Sobrenome" type="password" placeholder="Digite seu Sobrenome">
+                    
+                            <br><br>
+
+                        <label for="Email">Email:</label>
+                        <input required class="Email" type="text" placeholder="Insira seu Email">   
+                    
+                            <br><br>
+
+                            <label for="Telefone">Telefone:</label>
+                            <input required class="Telefone" type="number" placeholder="Insira seu mumero de Telefone">
+                            
+                                <br><br>
+
+                            <label for="Endereço">Endereço:</label>
+                            <input required class="Endereço" type="text" placeholder="Digite seu Endereço">
+                            
+                                <br><br>
+
+                            <label for="end.nr">Número do Endereço:</label>
+                            <input required class="end.nr" type="number" placeholder="Insira seu Número de Endereço">
+
+                                <br><br>
+
+                </fieldset>  
+
+                <fieldset class="inferior">
+                    <input class="envio" value="Salvar" type="submit"><a href="../menu_Cadastros.html"></a></input>
+                    <input class="limpador" type="reset" value="Limpar">
+                </fieldset>    
+
+              </form>
+        </div>
+</body>
+</html>
