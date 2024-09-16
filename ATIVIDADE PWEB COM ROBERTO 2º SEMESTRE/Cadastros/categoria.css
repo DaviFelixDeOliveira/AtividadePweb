@@ -1,0 +1,82 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout do formulário */
+.layout {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo dos fieldsets */
+fieldset {
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+legend {
+    font-size: 1.8em; /* Aumenta o tamanho do título */
+    color: #333;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo dos labels e inputs */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.3);
+}
+
+/* Estilo dos botões */
+.inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.envio, .limpador {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50; /* Cor uniforme para os botões */
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.envio:hover, .limpador:hover {
+    background-color: #45a049; /* Cor um pouco mais escura no hover */
+    transform: scale(1.05); /* Aumenta o botão no hover */
+    opacity: 0.9; /* Diminui a opacidade no hover */
+}
