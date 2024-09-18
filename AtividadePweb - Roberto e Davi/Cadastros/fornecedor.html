@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Fornecedor</title>
+    <link rel="stylesheet" href="fornecedor.css">
+</head>
+<body>
+    <div class="container">
+        <form name="cadastro-fornecedor" action="../php/insert_fornecedor.php" method="post">
+            <div class="header">
+                <a href="../Telas/fornecedor.html"><i class="back-button fa-solid fa-circle-arrow-left"></i></a>
+                <h3 class="title">Cadastrar Fornecedores</h3>
+            </div>
+            
+            <label for="Nome">Nome:</label>
+            <input required type="text" placeholder="Digite seu Nome" maxlength="50" name="nm_fornecedor">
+            
+            <label for="Contato">Contato:</label>
+            <input required type="text" placeholder="Digite seu Contato" name="nm_contato">
+            
+            <label for="Telefone">Telefone:</label>
+            <input required type="number" name="nr_fone" placeholder="Insira seu número de Telefone">
+            
+            <label for="Endereço">Endereço:</label>
+            <input required type="text" name="nm_endereco" placeholder="Digite seu Endereço">
+            
+            <label for="end.nr">Número do Endereço:</label>
+            <input required type="number" name="nr_endereco" placeholder="Insira seu Número de Endereço">
+            
+            <div class="buttons">
+                <input class="envio" value="Salvar" type="submit">
+                <input class="limpador" type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/fe31542f8a.js" crossorigin="anonymous"></script>
+</body>
+</html>

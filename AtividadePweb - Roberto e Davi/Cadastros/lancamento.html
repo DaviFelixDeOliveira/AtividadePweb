@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Lançamento</title>
+    <link rel="stylesheet" href="lancamento.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="cadastro-lancamento" method="post">
+            <div class="header">
+                <a href="../menu_Cadastros.html"><i class="back-button fa-solid fa-circle-arrow-left"></i></a>
+                <h3 class="title">Lançamento</h3>
+            </div>
+
+            <label for="Valor">Valor:</label>
+            <input required type="number" name="vl_lancamento" placeholder="R$">
+
+            <label for="Tipo">Tipo:</label>
+            <input required type="text" name="tp_lancamento" placeholder="Digite o tipo...">
+
+            <label for="Descrição">Descrição:</label>
+            <textarea name="ds_lancamento" cols="60" rows="6" placeholder="Insira uma breve descrição..."></textarea>
+
+            <div class="buttons">
+                <input class="envio" value="Salvar" type="submit">
+                <input class="limpador" type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/fe31542f8a.js" crossorigin="anonymous"></script>
+</body>
+</html>

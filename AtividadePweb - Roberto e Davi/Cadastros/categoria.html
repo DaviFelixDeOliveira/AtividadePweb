@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Categoria</title>
+        <link rel="stylesheet" href="categoria.css">
+    </head>
+    <body>
+        <div class="container">
+            <form name="cadastro-categoria" method="post">
+                <div class="header">
+
+                    <a href="../Telas/categoria.html"><i class=" back-button fa-solid fa-circle-arrow-left"></i></a>
+                    <h3 class="title">Categoria</h3>
+                </div>
+                
+                <label for="Nome">Nome:</label>
+                <input required type="text" placeholder="Digite seu nome" maxlength="50" name="nm_categoria">
+                
+                <label for="Descricao">Descrição:</label>
+                <textarea name="ds_categoria" id="Descricao" cols="60" rows="6" placeholder="Insira uma breve descrição..."></textarea>
+
+                <div class="buttom">
+                    <input class="envio" value="Salvar" type="submit">
+                    <input class="limpador" type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+
+        <script src="https://kit.fontawesome.com/fe31542f8a.js" crossorigin="anonymous"></script>
+    </body>
+    </html>
