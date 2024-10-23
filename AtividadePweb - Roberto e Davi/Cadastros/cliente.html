@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cliente</title>
+    <link rel="stylesheet" href="cliente.css">
+    <script src="https://kit.fontawesome.com/fe31542f8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form name="cadastro-cliente" action="../php/insert_cliente.php" method="post">
+            <div class="header">
+                <a href="../Telas/cliente.html"><i class="back-button fa-solid fa-circle-arrow-left"></i></a>
+                <h3 class="title">Cadastrar Clientes</h3>
+            </div>
+
+            <label for="Nome">Nome:</label>
+            <input required type="text" name="nm_cliente" placeholder="Digite seu Nome">
+
+            <label for="Sobrenome">Sobrenome:</label>
+            <input required type="text" name="nm_sobrenome" placeholder="Digite seu Sobrenome">
+
+            <label for="Email">Email:</label>
+            <input required type="email" name="nm_email" placeholder="Insira seu Email">   
+
+            <label for="Telefone">Telefone:</label>
+            <input required type="number" name="nr_tel" placeholder="Insira seu número de Telefone">
+
+            <label for="Endereço">Endereço:</label>
+            <input required type="text" name="nm_endereco" placeholder="Digite seu Endereço">
+
+            <label for="end.nr">Número do Endereço:</label>
+            <input required type="number" name="nr_endereco" placeholder="Insira seu Número de Endereço">
+
+            <div class="buttom">
+                <input class="envio" value="Salvar" type="submit">
+                <input class="limpador" type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    justify-content: center; /* Centraliza o texto */
+}
+
+.header i {
+    cursor: pointer;
+    font-size: 2em; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre o ícone e o título */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+.buttom {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttom input {
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #5c5c5c; 
+    color: #fff;
+    margin-right: 10px;
+}
+
+.buttom input:hover {
+    opacity: 0.7;   
+}
