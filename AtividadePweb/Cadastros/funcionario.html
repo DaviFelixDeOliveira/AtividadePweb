@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Funcionário</title>
+    <link rel="stylesheet" href="funcionario.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="cadastro-funcionario"  action="../php/insert_funcionario.php" method="post">
+            <div class="header">
+                <a href="../Telas/funcionario.html"><i class="back-button fa-solid fa-circle-arrow-left"></i></a>
+                <h3 class="title">Cadastrar Funcionário</h3>
+            </div>
+
+            <label for="Nome">Nome:</label>
+            <input required class="Nome" type="text" name="nm_funcionario" placeholder="Digite seu Nome">
+            
+            <label for="Sobrenome">Sobrenome:</label>
+            <input required class="Sobrenome" type="text" name="nm_sobrenome" placeholder="Digite seu Sobrenome">
+            
+            <label for="Data">Data de Nascimento:</label>
+            <input required class="Data" type="date" name="dt_nascimento">
+            
+            <label for="Senha">Senha:</label>
+            <input required class="Senha" type="password" name="nm_senha" placeholder="Insira a Senha">
+            
+            <label for="Cargo">Cargo:</label>
+            <input required class="Cargo" type="text" name="nm_cargo" placeholder="Digite seu Cargo">
+            
+            <label for="Salario">Salário:</label>
+            <input required class="Salario" type="number" name="nr_salario" placeholder="Insira seu Salário">
+            
+            <label for="Admissao">Data de Admissão:</label>
+            <input required class="Admissao" type="date" name="dt_admissao">
+            
+            <div class="buttons">
+                <input class="envio" value="Salvar" type="submit">
+                <input class="limpador" type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/fe31542f8a.js" crossorigin="anonymous"></script>
+</body>
+</html>
